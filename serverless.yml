@@ -67,7 +67,7 @@ functions:
   create-hero:
     handler: handler.postHeroes
     events:
-      - http:
+      - httpApi:
           path: /v1/heroes
           method: post
 #    The following are a few example events you can configure

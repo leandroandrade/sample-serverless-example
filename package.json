@@ -2,7 +2,7 @@
   "name": "sample-servless-example",
   "version": "1.0.0",
   "description": "",
-  "main": "handler.js",
+  "main": "src/handler.js",
   "scripts": {
     "dev": "serverless offline"
   },

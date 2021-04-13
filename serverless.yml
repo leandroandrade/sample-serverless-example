@@ -59,13 +59,13 @@ provider:
 
 functions:
   get-heroes:
-    handler: handler.heroes
+    handler: src/handler.getHeroes
     events:
       - http:
           path: /v1/heroes
           method: get
   create-hero:
-    handler: handler.postHeroes
+    handler: src/handler.postHeroes
     events:
       - httpApi:
           path: /v1/heroes

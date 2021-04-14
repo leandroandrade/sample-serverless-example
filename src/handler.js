@@ -21,3 +21,17 @@ module.exports.postHeroes = async (event) => {
     };
 };
 
+module.exports.getHeroByID = async (event) => {
+    const { id } = event.pathParameters;
+    const heroes = [
+        { id:1, name: 'Batman' },
+        { id:2, name: 'Superman' },
+    ]
+    const hero = heroes.find(hero => hero.id === +id);
+
+    return {
+        statusCode: 200,
+        body: JSON.stringify({ result: hero })
+    };
+};
+

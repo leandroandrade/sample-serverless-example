@@ -70,6 +70,12 @@ functions:
       - httpApi:
           path: /v1/heroes
           method: post
+  get-hero-by-id:
+    handler: src/handler.getHeroByID
+    events:
+      - httpApi:
+          path: /v1/heroes/{id}
+          method: get
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
